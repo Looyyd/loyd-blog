@@ -2,12 +2,11 @@ import { type NextPage } from "next";
 import MyHead from "../components/MyHead";
 import { Navbar } from "../components/NavBar";
 
-const Home: NextPage = () => {
+const About: NextPage = () => {
   return (
     <>
-      <MyHead page={undefined}></MyHead>
+      <MyHead page={"About"}></MyHead>
       <Navbar></Navbar>
-
 
       <main className="">
 
@@ -16,4 +15,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default About;
