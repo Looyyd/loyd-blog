@@ -3,6 +3,8 @@ import type PostType from '../../interfaces/post'
 import { NextPage } from "next";
 import { Navbar } from "../components/NavBar";
 import Link from "next/link";
+import { Main } from "../components/Main";
+import { Body } from "../components/Body";
 
 
 type Props = {
@@ -13,17 +15,21 @@ export default function Blog({ allPosts }: Props) {
   return (
     <>
 
-      <Navbar></Navbar>
-      {allPosts.map(post => {
-          return (
-            <div key={post.slug}>
-              <Link href={`/blog/${post.slug}`}>
-                {post.title}
-              </Link>
-            </div>
-              )
-      })
-      }
+      <Body>
+        <Navbar></Navbar>
+        <Main>
+          {allPosts.map(post => {
+            return (
+              <div key={post.slug}>
+                <Link href={`/blog/${post.slug}`}>
+                  {post.title}
+                </Link>
+              </div>
+            )
+          })
+          }
+        </Main>
+      </Body>
 
     </>
   )

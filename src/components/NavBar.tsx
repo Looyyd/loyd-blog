@@ -68,7 +68,7 @@ const NavButtons = (props:NavButtonsProps) => {
 
 
   return (
-    <div className="flex flex-row md:flex-col space-x-0 pr-10 mb-2 mt-2 md:mt-0">
+    <aside className="flex float-left fixed flex-row w-1/6 md:relative md:flex-col space-x-0 pr-10 mb-2 mt-2 md:mt-0">
 
       {Object.entries(navItems).map(([path, { name }]) => {
         const isActive = path === asPath;
@@ -89,7 +89,7 @@ const NavButtons = (props:NavButtonsProps) => {
           </Link>
         );
       })}
-    </div>
+    </aside>
   )
 }
 

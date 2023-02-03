@@ -7,6 +7,8 @@ import { CMS_NAME } from '../../../lib/constants'
 import markdownToHtml from '../../../lib/markdownToHtml'
 import type PostType from '../../../interfaces/post'
 import { Navbar } from "../../components/NavBar";
+import { Main } from "../../components/Main";
+import { Body } from "../../components/Body";
 
 type Props = {
   post: PostType
@@ -19,25 +21,28 @@ export default function Post({ post }: Props) {
     return <ErrorPage statusCode={404} />
   }
   return (
-    <div>
-        { router.isFallback ? (
+    <Body>
+      { router.isFallback ? (
           <div>Loading…</div>
         ) : (
           <>
-            <Navbar></Navbar>
-            <article className="mb-32">
-              <Head>
-                <title>
-                  {post.title} | Filip Niedzielski
-                </title>
-                {/*<meta property="og:image" content={post.ogImage.url} />*/}
-              </Head>
+              <Navbar></Navbar>
+              <article className="mb-32">
+                <Head>
+                  <title>
+                    {post.title} | Filip Niedzielski
+                  </title>
+                  {/*<meta property="og:image" content={post.ogImage.url} />*/}
+                </Head>
 
-              <PostBody content={post.content} />
-            </article>
+                <Main>
+                  <PostBody content={post.content} />
+                </Main>
+
+              </article>
           </>
         )}
-    </div>
+    </Body>
 
   )
 }
@@ -53,10 +58,7 @@ export async function getStaticProps({ params }: Params) {
     'title',
     'date',
     'slug',
-    'author',
-    'content',
-    'ogImage',
-    'coverImage',
+    'content'
   ])
   const content = await markdownToHtml(post.content || '')
 
