@@ -1,6 +1,8 @@
 import { type NextPage } from "next";
 import MyHead from "../components/MyHead";
 import { Navbar } from "../components/NavBar";
+import { Main } from "../components/Main";
+import { MainHeader } from "../components/MainHeader";
 
 const Home: NextPage = () => {
   return (
@@ -8,10 +10,10 @@ const Home: NextPage = () => {
       <MyHead page={undefined}></MyHead>
       <Navbar></Navbar>
 
+      <Main>
+        <MainHeader title={"Filip Niedzielski"}/>
 
-      <main className="">
-
-      </main>
+      </Main>
     </>
   );
 };

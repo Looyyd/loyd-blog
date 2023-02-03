@@ -67,48 +67,8 @@ const NavButtons = (props:NavButtonsProps) => {
   }
 
 
-  const currentProperties = props[path]
-
   return (
     <div className="flex flex-row md:flex-col space-x-0 pr-10 mb-2 mt-2 md:mt-0">
-        <>
-          {/* Desktop version, hidden on mobile, animates y axis */}
-          <div className="hidden md:block">
-            <motion.div
-              className="absolute bg-neutral-100 dark:bg-neutral-800 h-[34px] rounded-md z-[-1]"
-              layoutId="test2"
-              initial={{ opacity: 0, y: currentProperties.y }}
-              animate={{
-                opacity: 1,
-                y: currentProperties.y,
-                width: currentProperties.w,
-              }}
-              transition={{
-                type: 'spring',
-                stiffness: 350,
-                damping: 30,
-              }}
-            />
-          </div>
-          {/* Mobile version, hidden on desktop, animates x axis */}
-          <div className="block md:hidden">
-            <motion.div
-              className="absolute bg-neutral-100 dark:bg-neutral-800 h-[34px] rounded-md z-[-1]"
-              layoutId="test"
-              initial={{ opacity: 0, x: currentProperties.x }}
-              animate={{
-                opacity: 1,
-                x: currentProperties.x,
-                width: currentProperties.w,
-              }}
-              transition={{
-                type: 'spring',
-                stiffness: 350,
-                damping: 30,
-              }}
-            />
-          </div>
-        </>
 
       {Object.entries(navItems).map(([path, { name }]) => {
         const isActive = path === asPath;
@@ -132,6 +92,8 @@ const NavButtons = (props:NavButtonsProps) => {
     </div>
   )
 }
+
+//Inspired by https://leerob.io/blog
 
 export const Navbar = () => {
 
