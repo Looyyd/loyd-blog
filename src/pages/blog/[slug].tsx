@@ -35,6 +35,7 @@ export default function Post({ post }: Props) {
                 </Head>
 
                 <Main>
+                  {<div>Posted on {post.date}</div>}
                   <PostBody content={post.content} />
                 </Main>
 

@@ -1,6 +1,6 @@
 ---
 title: 'My blog title'
-date: '2020-03-16T05:35:07.322Z'
+date: '2020-03-16'
 ---
 
 ## Hello World
