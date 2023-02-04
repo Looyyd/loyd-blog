@@ -19,6 +19,7 @@ export const LinkButton = (props:Props) => {
           {props.content}
         </div>
         <Image
+          /* eslint-disable-next-line @typescript-eslint/no-unsafe-assignment */
           src={linkImage}
           alt={"link image"}
           width={15}

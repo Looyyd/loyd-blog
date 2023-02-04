@@ -1,4 +1,4 @@
-import { getPostBySlug, getAllPosts } from '../../lib/api'
+import {  getAllPosts } from '../../lib/api'
 import type PostType from '../../interfaces/post'
 import { Navbar } from "../components/NavBar";
 import Link from "next/link";

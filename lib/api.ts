@@ -1,7 +1,6 @@
 import fs from 'fs'
 import { join } from 'path'
 import matter from 'gray-matter'
-import PostType from "../interfaces/post";
 
 const postsDirectory = join(process.cwd(), '_posts')
 
@@ -31,6 +30,7 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
     }
 
     if (typeof data[field] !== 'undefined') {
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
       items[field] = data[field]
     }
   })
@@ -43,6 +43,8 @@ export function getAllPosts(fields: string[] = []) {
   const posts = slugs
     .map((slug) => getPostBySlug(slug, fields))
     // sort _posts by date in descending order
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
     .sort((post1, post2) => (post1.date > post2.date ? -1 : 1))
   return posts
 }
