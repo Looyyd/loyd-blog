@@ -35,7 +35,7 @@ const Home: NextPage = () => {
             Join me on my journey of <b>learning, growth, and discovery</b>.
           </Paragraph>
           <Paragraph>
-            Learn more about me on the <Link href={"/about"}><b>About page</b></Link>, and connect with me on my social media links.
+            Learn more about me on the <Link href={"/about"}><b>about page</b></Link>, and connect with me on my social media links.
             Check out <Link href={"/blog"}><b>my blog</b></Link> for my latest articles.
           </Paragraph>
 

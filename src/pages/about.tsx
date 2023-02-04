@@ -18,10 +18,10 @@ const About: NextPage = () => {
           <MainHeader title={"About Me"}/>
           <Paragraph>
             Hi, I&lsquo;m Filip, a French cybersecurity student with a passion for technology and innovation.
-            As a current intern at I-Tracing, a Paris-based cybersecurity consulting firm, I specialize in cloud security audits and have gained extensive experience in securing Azure infrastructures.
+            As a current intern at I-Tracing, a Paris-based cybersecurity consulting firm, I specialize in cloud security audits and have gained experience in securing Azure infrastructures.
           </Paragraph>
           <Paragraph>
-            Follow me on my social media channels where I share my knowledge and insights on cybersecurity and computer science.
+            Follow me on my socials where I share my knowledge and insights on cybersecurity and computer science.
             I&lsquo;m always eager to learn and grow in this field, and I hope to inspire others to do the same.
           </Paragraph>
           <h1>Socials</h1>
