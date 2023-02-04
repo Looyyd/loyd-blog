@@ -1,9 +1,7 @@
 import Link from "next/link";
 import clsx from 'clsx';
-import { motion } from 'framer-motion';
 import { useRouter } from "next/router";
-import Image from "next/image";
-import fLogo from "../img/Logo letter F Nordic Font .png"
+
 
 
 
@@ -72,7 +70,8 @@ const NavButtons = (props:NavButtonsProps) => {
   return (
     <aside className="flex float-left relative flex-row w-1/6 md:fixed md:flex-col space-x-0 pr-10 mb-2 mt-2 md:mt-0">
 
-      <Image src={fLogo} alt={"F letter logo"} />
+      {/*<Image src={fLogo} alt={"F letter logo"} /> */}
+      <h1 style={{fontFamily: "Nordic"}} className="py-[5px] px-[12px]">F</h1>
 
       {Object.entries(navItems).map(([path, { name }]) => {
         const isActive = path === asPath;

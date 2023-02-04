@@ -20,12 +20,14 @@ const Home: NextPage = () => {
           <Paragraph>
             Hi, I'm Filip, a driven and knowledgeable cybersecurity student with a passion for technology and innovation.
             I am currently honing my skills at I-Tracing, a leading cybersecurity consulting firm based in Paris.
+          </Paragraph>
+          <Paragraph>
             Welcome to my personal website, which I use as an online business card and a platform to share my thoughts and insights on subjects I'm passionate about, such as cybersecurity and the broader field of computer science.
             Join me on my journey of learning, growth, and discovery.
           </Paragraph>
           <Image
             src={pp}
-            className="rounded-full"
+            className="rounded-full mt-3 mb-3"
             alt={"Picture of the Author"}
             width={200}
             height={200}

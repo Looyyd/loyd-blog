@@ -1,11 +1,11 @@
 import { getPostBySlug, getAllPosts } from '../../lib/api'
 import type PostType from '../../interfaces/post'
-import { NextPage } from "next";
 import { Navbar } from "../components/NavBar";
 import Link from "next/link";
 import { Main } from "../components/Main";
 import { Body } from "../components/Body";
 import { MainHeader } from "../components/MainHeader";
+import { Paragraph } from "../components/Paragraph";
 
 
 type Props = {
@@ -13,6 +13,19 @@ type Props = {
 }
 
 export default function Blog({ allPosts }: Props) {
+  const blogList =  allPosts.map(post => {
+      return (
+        <li key={post.slug}>
+          <Paragraph>
+            <Link href={`/blog/${post.slug}`}>
+              {post.title}
+            </Link>
+          </Paragraph>
+        </li>
+      )
+    }
+  )
+
   return (
     <>
 
@@ -21,16 +34,11 @@ export default function Blog({ allPosts }: Props) {
         <Main>
           <div>
           <MainHeader title={"Blog"}/>
-          {allPosts.map(post => {
-            return (
-              <div key={post.slug}>
-                <Link href={`/blog/${post.slug}`}>
-                  {post.title}
-                </Link>
-              </div>
-            )
-          })
-          }
+            <ul>
+              {
+                allPosts.length===0 ? "Nothin here yet." : blogList
+              }
+            </ul>
           </div>
         </Main>
       </Body>
