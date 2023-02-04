@@ -71,7 +71,7 @@ const NavButtons = (props:NavButtonsProps) => {
     <aside className="flex float-left relative flex-row w-1/6 md:fixed md:flex-col space-x-0 pr-10 mb-2 mt-2 md:mt-0">
 
       {/*<Image src={fLogo} alt={"F letter logo"} /> */}
-      <h1 style={{fontFamily: "Nordic"}} className="py-[5px] px-[12px]">F</h1>
+      <a style={{fontFamily: "Nordic"}} className="text-3xl  mt-0 py-[8px] px-[12px]">F</a>
 
       {Object.entries(navItems).map(([path, { name }]) => {
         const isActive = path === asPath;
@@ -81,7 +81,7 @@ const NavButtons = (props:NavButtonsProps) => {
             key={path}
             href={path}
             className={clsx(
-              'transition-all hover:text-neutral-800 dark:hover:text-neutral-200 py-[5px] px-[10px]',
+              'transition-all hover:text-neutral-800 dark:hover:text-neutral-200 py-[5px] px-[10px] mt-2',
               {
                 'text-neutral-500': !isActive,
                 'font-bold': isActive,
