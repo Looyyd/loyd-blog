@@ -28,6 +28,7 @@ const Home: NextPage = () => {
           <Image
             src={pp}
             className="rounded-full mt-3 mb-3"
+            decoding={"sync"}
             alt={"Picture of the Author"}
             width={200}
             height={200}

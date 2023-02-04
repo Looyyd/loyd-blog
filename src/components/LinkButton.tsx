@@ -24,6 +24,7 @@ export const LinkButton = (props:Props) => {
           alt={"link image"}
           width={15}
           height={15}
+          decoding={"sync"}
           className="float-right  mt-0 mb-0"
         />
       </a>
