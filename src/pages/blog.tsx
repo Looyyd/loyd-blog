@@ -5,6 +5,7 @@ import { Navbar } from "../components/NavBar";
 import Link from "next/link";
 import { Main } from "../components/Main";
 import { Body } from "../components/Body";
+import { MainHeader } from "../components/MainHeader";
 
 
 type Props = {
@@ -18,6 +19,8 @@ export default function Blog({ allPosts }: Props) {
       <Body>
         <Navbar></Navbar>
         <Main>
+          <div>
+          <MainHeader title={"Blog"}/>
           {allPosts.map(post => {
             return (
               <div key={post.slug}>
@@ -28,6 +31,7 @@ export default function Blog({ allPosts }: Props) {
             )
           })
           }
+          </div>
         </Main>
       </Body>
 
