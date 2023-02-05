@@ -8,7 +8,7 @@ interface MyHeadProps {
 
 const MyHead = (props:MyHeadProps) => {
 
-  const title = props.page === undefined ? "Filip Niedzielski" : `${props.page} | Filip Niedzielski`
+  const title = props.page === undefined ? "Filip Niedzielski | Personal Website" : `${props.page} | Filip Niedzielski`
 
   return (
     <Head>

@@ -6,6 +6,7 @@ import { Main } from "../components/Main";
 import { Body } from "../components/Body";
 import { MainHeader } from "../components/MainHeader";
 import { Paragraph } from "../components/Paragraph";
+import MyHead from "../components/MyHead";
 
 
 type Props = {
@@ -18,7 +19,7 @@ export default function Blog({ allPosts }: Props) {
         <li key={post.slug}>
           <Paragraph>
             <Link href={`/blog/${post.slug}`}>
-              {post.title}
+              {post.title + " - " + post.date}
             </Link>
           </Paragraph>
         </li>
@@ -29,11 +30,12 @@ export default function Blog({ allPosts }: Props) {
   return (
     <>
 
+      <MyHead page={"Blog"}></MyHead>
       <Body>
         <Navbar></Navbar>
         <Main>
           <div>
-          <MainHeader title={"Blog"}/>
+          <MainHeader title={"Blog Posts"}/>
             <ul>
               {
                 allPosts.length===0 ? "Nothin here yet." : blogList
