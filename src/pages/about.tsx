@@ -21,7 +21,7 @@ const About: NextPage = () => {
             As a current intern at I-Tracing, a Paris-based cybersecurity consulting firm, I specialize in cloud security audits and have gained experience in securing Azure infrastructures.
           </Paragraph>
           <Paragraph>
-            <b>Follow me on my socials</b> where I share my knowledge and insights on cybersecurity and computer science more broadly.
+            <b>Follow me on my socials</b>, where I share my knowledge and insights on cybersecurity and computer science.
             I&lsquo;m always eager to learn and grow in this field, and I hope to inspire others to do the same.
           </Paragraph>
           <h1>Socials</h1>
