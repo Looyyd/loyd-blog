@@ -25,7 +25,7 @@ const About: NextPage = () => {
             I&lsquo;m always eager to learn and grow in this field, and I hope to inspire others to do the same.
           </Paragraph>
           <h1>Socials</h1>
-          <LinkButton link={"https://twitter.com/filip_loyd"} content={"Twitter"}/>
+          <LinkButton link={"https://twitter.com/filip_niedz"} content={"Twitter"}/>
           <LinkButton link={"https://www.linkedin.com/in/filip-niedzielski/"} content={"LinkedIn"}/>
           <LinkButton link={"https://github.com/Looyyd"} content={"GitHub"}/>
 
