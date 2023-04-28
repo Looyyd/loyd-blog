@@ -16,19 +16,19 @@
         @apply text-black dark:text-white
     }
     h1{
-        @apply font-bold text-3xl font-serif mb-3 mt-2 text-gray-300
+        @apply font-bold text-3xl font-serif mb-3 mt-2 text-black dark:text-gray-300
     }
     h2{
-         @apply font-bold text-2xl font-serif mb-3 mt-2 text-gray-300
+         @apply font-bold text-2xl font-serif mb-3 mt-2 text-black dark:text-gray-300
      }
     h3{
-        @apply font-bold text-xl font-serif mb-3 mt-2 text-gray-300
+        @apply font-bold text-xl font-serif mb-3 mt-2 text-black dark:text-gray-300
     }
     h3{
-        @apply text-xl font-serif mb-3 mt-2 text-gray-300
+        @apply text-xl font-serif mb-3 mt-2 text-black dark:text-gray-300
     }
     p{
-        @apply font-thin text-gray-300
+        @apply font-thin text-black dark:text-gray-300
     }
     img{
         @apply mt-3 mb-3
