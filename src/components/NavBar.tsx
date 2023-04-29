@@ -68,7 +68,7 @@ const NavButtons = (props:NavButtonsProps) => {
 
 
   return (
-    <aside className="flex float-left relative flex-row w-1/6 md:fixed md:flex-col space-x-0 pr-10 mb-2 mt-2 md:mt-0">
+    <aside className="flex float-left relative flex-row md:fixed md:flex-col space-x-0 pr-10 mb-2 mt-2 md:mt-0">
 
       {/*<Image src={fLogo} alt={"F letter logo"} /> */}
       <a style={{fontFamily: "Nordic"}} className="text-3xl  mt-0 py-[8px] px-[12px]">F</a>
@@ -108,7 +108,7 @@ export const Navbar = () => {
           <Logo />
         </div>
         <nav
-          className="flex flex-row md:flex-col items-start relative overflow-scroll px-4 md:px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
+          className="flex flex-row md:flex-col items-start relative overflow-hidden px-4 md:px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
           id="nav"
         >
           <NavButtons {...navItems} />
