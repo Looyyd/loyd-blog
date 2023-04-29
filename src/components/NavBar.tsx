@@ -108,7 +108,7 @@ export const Navbar = () => {
           <Logo />
         </div>
         <nav
-          className="flex flex-row md:flex-col items-start relative overflow-scroll px-4 md:px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
+          className="flex flex-row md:flex-col items-start relative overflow-hidden px-4 md:px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
           id="nav"
         >
           <NavButtons {...navItems} />
