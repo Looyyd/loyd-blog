@@ -4,18 +4,6 @@ import { useRouter } from "next/router";
 
 
 
-
-
-
-
-const Logo = () => {
-  return(
-    <div>
-
-    </div>
-  )
-}
-
 const navItems = {
   '/': {
     name: 'Home',
@@ -44,8 +32,7 @@ interface NavButtonProps {
   w: string
 }
 
-type pathType = '/' | '/blog' | '/about'
-
+// type pathType = '/' | '/blog' | '/about'
 
 interface NavButtonsProps {
   '/': NavButtonProps
@@ -53,24 +40,14 @@ interface NavButtonsProps {
   '/blog': NavButtonProps
 }
 
-const NavButtons = (props:NavButtonsProps) => {
+const NavButtons = (navItems:NavButtonsProps) => {
   const { asPath } = useRouter()
   console.log(asPath)
-
-  let path : pathType = '/'
-
-  if(asPath.startsWith('/blog')){
-    path = '/blog'
-  }
-  else if(asPath.startsWith('/about')){
-    path = '/about'
-  }
 
 
   return (
     <aside className="flex float-left relative flex-row md:fixed md:flex-col space-x-0 pr-10 mb-2 mt-2 md:mt-0">
 
-      {/*<Image src={fLogo} alt={"F letter logo"} /> */}
       <a style={{fontFamily: "Nordic"}} className="text-3xl  mt-0 py-[8px] px-[12px]">F</a>
 
       {Object.entries(navItems).map(([path, { name }]) => {
@@ -104,9 +81,6 @@ export const Navbar = () => {
   return (
     <aside className="md:w-[150px] md:flex-shrink-0 -mx-4 md:mx-0 md:px-0 font-serif">
       <div className="lg:sticky lg:top-20">
-        <div className="ml-2 md:ml-[12px] mb-2 px-4 md:px-0 md:mb-8 space-y-10 flex flex-col md:flex-row items-start ">
-          <Logo />
-        </div>
         <nav
           className="flex flex-row md:flex-col items-start relative overflow-hidden px-4 md:px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
           id="nav"
