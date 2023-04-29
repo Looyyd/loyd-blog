@@ -68,7 +68,7 @@ const NavButtons = (props:NavButtonsProps) => {
 
 
   return (
-    <aside className="flex float-left relative flex-row w-1/6 md:fixed md:flex-col space-x-0 pr-10 mb-2 mt-2 md:mt-0">
+    <aside className="flex float-left relative flex-row md:fixed md:flex-col space-x-0 pr-10 mb-2 mt-2 md:mt-0">
 
       {/*<Image src={fLogo} alt={"F letter logo"} /> */}
       <a style={{fontFamily: "Nordic"}} className="text-3xl  mt-0 py-[8px] px-[12px]">F</a>
