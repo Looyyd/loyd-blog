@@ -19,6 +19,7 @@ const Home: NextPage = () => {
         <Main>
           <MainHeader title={"Filip Niedzielski"}/>
           <Image
+            /* eslint-disable-next-line @typescript-eslint/no-unsafe-assignment */
             src={pp}
             className="rounded-full mt-3 mb-3"
             decoding={"sync"}
