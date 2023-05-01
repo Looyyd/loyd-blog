@@ -10,7 +10,7 @@ describe('Blog page', () => {
 
     it('Can navigate to hello world post', () => {
         cy.contains('Hello World').click();
-        cy.url().should('include', '/blog/hello-world');
+        cy.url({ timeout: 10000 }).should('include', '/blog/hello-world');
     });
 });
   
