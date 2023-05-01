@@ -1,13 +1,9 @@
 type Props = {
-  content: string
-}
+  children: React.ReactNode;
+};
 
-const PostBody = ({ content }: Props) => {
-  return (
-      <div
-        dangerouslySetInnerHTML={{ __html: content }}
-      />
-  )
-}
+const PostBody = ({ children }: Props) => {
+  return <div>{children}</div>;
+};
 
-export default PostBody
+export default PostBody;

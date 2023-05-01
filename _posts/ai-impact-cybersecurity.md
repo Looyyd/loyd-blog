@@ -29,11 +29,11 @@ To estimate the productivity improvement brought by ChatGPT, we'll consider its 
 
 # Estimating Demand
 
-Estimating the demand for cybersecurity is a challenging task. On one hand, software security is becoming more mature, leading to a reduced likelihood of cyberattacks. However, as software takes on increasingly critical tasks, the potential impact of cyberattacks grows. To simplify the estimation, we will assume that cybersecurity demand is proportional to the amount of software written.
+Estimating the demand for cybersecurity is a challenging task. On one hand, software security is becoming more mature, leading to a reduced likelihood of cyberattacks. However, as software takes on increasingly critical tasks, the potential impact of cyberattacks grows. Additionally, new threats and attack vectors are continuously emerging, which could counterbalance the maturation of software security. To simplify the estimation, we will assume that cybersecurity demand is proportional to the amount of software written.
 
 ## Estimating Software Production Capacity
 
-As software remains crucial for advancements in automation, AI tools, and other emerging technologies, the current demand for software is likely not met. This unmet demand suggests that the amount of software written is constrained by software production capacity, which depends on the size of the programmer workforce and their productivity.
+As software remains crucial for advancements in automation, AI tools, and other emerging technologies, the current demand for software is likely not met. According to a report by the US Labor Department, the global shortage of software engineers may reach 85.2 million by 2030. Furthermore, around 40 million technical jobs go unfulfilled due to a lack of skilled talent. This unmet demand suggests that the amount of software written is constrained by software production capacity, which depends on the size of the programmer workforce and their productivity.
 
 ## Impact of ChatGPT on Software Output
 
@@ -49,12 +49,18 @@ Plugging in our values, we get:
 
 (Developer_workforce_change * Productivity_of_developer)/Productivity_of_cybersecurity_field = (Developer_workforce_change * 165)/165 = Developer_workforce_change
 
+$$\frac{(Developer\_workforce\_change \times Productivity\_of\_developer)}{Productivity\_of\_cybersecurity\_field} = \frac{(Developer\_workforce\_change \times 165)}{165} = Developer\_workforce\_change$$
+
+$Cybersecurity\_workforce\_change = \frac{Demand}{Productivity} = \frac{Amount\_of\_software\_written}{Productivity\_of\_cybersecurity\_field}$
+
+
+
 Based on our estimations, ChatGPT should not have a significant impact on cybersecurity jobs. This conclusion assumes that the demand for cybersecurity will increase proportionally with the growth in software output, without factoring in potential changes in the threat landscape, technology adoption rates, or cybersecurity maturity. However, it is essential to consider these additional factors when evaluating the true impact of ChatGPT and other productivity-enhancing technologies on the cybersecurity workforce.
 
-# Closing Thoughts: Adapting to the Impact of Specialized AI Applications 
+# Closing Thoughts: Adapting to the Impact of Specialized AI Applications
 
 In conclusion, although our analysis suggests that ChatGPT technology may not significantly affect the overall number of cybersecurity jobs, it is important to recognize that it will still have a profound impact on the nature of these jobs. As productivity-enhancing technologies like ChatGPT continue to evolve, they are likely to reshape the roles and responsibilities of cybersecurity professionals.
 
 Additionally, we must remain cautious about more specialized AI applications that focus solely on improving the productivity of cybersecurity professionals. These specialized tools could potentially reduce the demand for cybersecurity jobs, as they enable fewer professionals to handle the same workload.
 
-Ultimately, it is crucial for cybersecurity professionals and other workers in niche fields to be aware of the potential risks posed by AI and automation. By continuously educating themselves, staying informed about industry trends, and adapting to the changing landscape, these professionals can better position themselves for success in a rapidly evolving job market. This proactive approach can help ensure that advancements in AI and automation contribute positively to the workforce, rather than leaving niche workers feeling powerless and vulnerable to change.
+Ultimately, it is crucial for cybersecurity professionals and other workers in niche fields to be aware of the potential risks posed by AI and automation. By continuously educating themselves, staying informed about industry trends, and adapting to the changing landscape, these professionals can better position themselves for success in a rapidly evolving job market. This proactive approach can help ensure that advancements in AI and automation contribute positively to the workforce, giving skilled professionals more agency and control over their careers in the face of disruptive technological changes.

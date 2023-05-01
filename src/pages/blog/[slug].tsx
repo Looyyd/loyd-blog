@@ -3,11 +3,16 @@ import ErrorPage from 'next/error'
 import PostBody from '../../components/PostBody'
 import { getPostBySlug, getAllPosts } from '../../../lib/api'
 import Head from 'next/head'
-import markdownToHtml from '../../../lib/markdownToHtml'
 import type PostType from '../../../interfaces/post'
 import { Navbar } from "../../components/NavBar";
 import { Main } from "../../components/Main";
 import { Body } from "../../components/Body";
+
+import ReactMarkdown from 'react-markdown';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
+import 'katex/dist/katex.min.css'; // Import the CSS for KaTeX
+
 
 type Props = {
   post: PostType
@@ -36,7 +41,14 @@ export default function Post({ post }: Props) {
 
                 <Main>
                   {<div>Posted on {post.date}</div>}
-                  <PostBody content={post.content} />
+                <PostBody>
+                  <ReactMarkdown
+                    remarkPlugins={[remarkMath]}
+                    rehypePlugins={[rehypeKatex]}
+                  >
+                    {post.content}
+                  </ReactMarkdown>
+                </PostBody>
                 </Main>
 
               </article>
@@ -53,24 +65,24 @@ type Params = {
   }
 }
 
-export async function getStaticProps({ params }: Params) {
+export function getStaticProps({ params }: Params) {
   const post = getPostBySlug(params.slug, [
     'title',
     'date',
     'slug',
     'content'
   ])
-  const content = await markdownToHtml(post.content || '')
 
   return {
     props: {
       post: {
         ...post,
-        content,
       },
     },
   }
 }
+
+
 
 export function getStaticPaths() {
   const posts = getAllPosts(['slug'])
