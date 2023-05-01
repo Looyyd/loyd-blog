@@ -49,7 +49,7 @@ export default function Blog({ allPosts }: Props) {
   )
 }
 
-export const getStaticProps =  () => {
+export const getStaticProps = () => {
   const allPosts = getAllPosts([
     'title',
     'date',
@@ -59,7 +59,17 @@ export const getStaticProps =  () => {
     'excerpt',
   ])
 
+  // Sort the posts by date in descending order (latest first)
+  const sortedPosts = allPosts.sort((a, b) => {
+    if (a.date && b.date) {
+      const dateA = new Date(a.date);
+      const dateB = new Date(b.date);
+      return dateB.getTime() - dateA.getTime();
+    }
+    return 0;
+  });
+
   return {
-    props: { allPosts },
+    props: { allPosts: sortedPosts },
   }
 }
