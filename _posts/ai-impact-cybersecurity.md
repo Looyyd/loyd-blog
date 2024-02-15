@@ -3,6 +3,10 @@ title: 'ChatGPT impact on cybersecurity field'
 date: '30 Apr 2023'
 ---
 
+# Disclaimer
+
+This post was mostly a test, to learn to write using ChatGPT. The post was written entirely by ChatGPT, altough I prompted it strongly, for exemple to use the formula for productivity and the changes in productivity.
+
 # Introduction
 The world of cybersecurity is constantly changing, and Artificial Intelligence (AI) is shaking things up even more. It's helping organizations tackle threats more effectively, and as a result, it's crucial to understand how AI might change the cybersecurity workforce landscape. Most people talk about factors like task complexity, social and emotional intelligence, and the balance between routine and non-routine tasks in different job roles when they try to estimate the likelihood of productivity improvements from technology. While these aspects are important in predicting the potential for technology to have an impact, they might not provide a complete understanding of the actual impact once the technology already exists.
 

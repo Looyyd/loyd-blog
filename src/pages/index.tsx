@@ -6,7 +6,7 @@ import { MainHeader } from "../components/MainHeader";
 import { Body } from "../components/Body";
 import { Paragraph } from "../components/Paragraph";
 import Image from "next/image";
-import pp from "../img/Photo Pro Round.jpeg"
+import pp from "../img/jojo.png"
 import Link from "next/link";
 
 const Home: NextPage = () => {
@@ -28,16 +28,14 @@ const Home: NextPage = () => {
             height={200}
           />
           <Paragraph>
-            <b>Hi, I&lsquo;m Filip, a cybersecurity student with a passion for technology and innovation. </b>
-            I am currently an intern at I-Tracing, a leading cybersecurity consulting firm based in Paris.
+            <b>Hi, I&lsquo;m Filip, I have a passion for computers, video games and anything that helps me understand the world. </b>
           </Paragraph>
           <Paragraph>
-            Welcome to my personal website, which I use as an online business card and a platform to share my thoughts and insights on subjects I&lsquo;m passionate about, such as cybersecurity and the broader field of computer science.
-            Join me on my journey of <b>learning, growth, and discovery</b>.
+            Welcome to my domain, make yourself at home.
           </Paragraph>
           <Paragraph>
-            Learn more about me on the <Link href={"/about"}><b>about page</b></Link>, and connect with me on my social media links.
-            Check out <Link href={"/blog"}><b>my blog</b></Link> for my latest articles.
+            Learn more about me on the <Link href={"/about"}><b>about page</b></Link>.
+            You can also check out <Link href={"/blog"}><b>my blog</b></Link>, where maybe I have written about something that you are interested in.
           </Paragraph>
 
 

@@ -17,22 +17,18 @@ const About: NextPage = () => {
         <Main>
           <MainHeader title={"About Me"}/>
           <Paragraph>
-            Hi, I&lsquo;m Filip, a French <b>cybersecurity student with a passion for technology and innovation</b>.
-            As a current intern at I-Tracing, a Paris-based cybersecurity consulting firm, I specialize in cloud security audits and have gained experience in securing Azure infrastructures.
+            <b>Hi, I&lsquo;m Filip, I have a passion for computers, video games and anything that helps me understand the world. </b>
           </Paragraph>
           <Paragraph>
-            <b>Follow me on my socials</b>, where I share my knowledge and insights on cybersecurity and computer science.
-            I&lsquo;m always eager to learn and grow in this field, and I hope to inspire others to do the same.
+            If you also like video games, and especially League checkout a site I made <a href={"https://draftkingdom.lol"}>DraftKingdom.lol</a>.
+          </Paragraph>
+          <Paragraph>
+            <b>Follow on Twitter</b>, where I try to share anything I find interesting.
           </Paragraph>
           <h1>Socials</h1>
           <LinkButton link={"https://twitter.com/filip_niedz"} content={"Twitter"}/>
           <LinkButton link={"https://www.linkedin.com/in/filip-niedzielski/"} content={"LinkedIn"}/>
           <LinkButton link={"https://github.com/Looyyd"} content={"GitHub"}/>
-
-          <h1>CTF platforms profiles</h1>
-          <LinkButton link={"https://www.root-me.org/LOOYYD"} content={"Root-Me"}/>
-          <LinkButton link={"https://app.hackthebox.com/users/517909"} content={"Hack The Box"}/>
-          <LinkButton link={"'https://tryhackme.com/p/LOOYYD"} content={"TryHackMe"}/>
 
         </Main>
       </Body>
