@@ -6,7 +6,7 @@ import { MainHeader } from "../components/MainHeader";
 import { Body } from "../components/Body";
 import { Paragraph } from "../components/Paragraph";
 import Image from "next/image";
-import pp from "../img/jojo.png"
+import pp from "../img/Jojo.png"
 import Link from "next/link";
 
 const Home: NextPage = () => {
