@@ -6,7 +6,7 @@ import Head from 'next/head'
 import type PostType from '../../../interfaces/post'
 import { Navbar } from "../../components/NavBar";
 import { Main } from "../../components/Main";
-import { Body } from "../../components/Body";
+import { Body } from '../../components/Body';
 
 import ReactMarkdown from 'react-markdown';
 import remarkMath from 'remark-math';
